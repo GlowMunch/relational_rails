@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get "/people", to: "people#index" #retrieve resourse /people
   get "/people/:id", to: "people#show"
   get "/hikes", to: "hikes#index"
+  get "/hikes/:id", to: "hikes#show"
 end
