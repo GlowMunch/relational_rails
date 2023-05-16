@@ -1,24 +1,26 @@
-# README
+[x] done
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+User Story 1, Person Index 
 
-Things you may want to cover:
+For each parent table
+As a visitor
+When I visit '/people'
+Then I see the name of each person record in the system
 
-* Ruby version
+[x] done
 
-* System dependencies
+User Story 2, Parent Show 
 
-* Configuration
+As a visitor
+When I visit '/parents/:id'
+Then I see the parent with that id including the parent's attributes
+(data from each column that is on the parent table)
 
-* Database creation
+[ ] done
 
-* Database initialization
+User Story 3, Child Index 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+As a visitor
+When I visit '/child_table_name'
+Then I see each Child in the system including the Child's attributes
+(data from each column that is on the child table)
