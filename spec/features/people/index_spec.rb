@@ -23,4 +23,15 @@ RSpec.describe "/people(people index page) User Story 1, Person Index", type: :f
       expect(page).to have_content(doug.name)
     end
   end
+
+  describe "visiting child_table_name" do
+    describe "see each Child in the system including the Child's attributes"do
+      doug = Person.create!(name: "Doug", age: 30, level: 3, scramble: true, max_distance_mi: 10, max_elevation_ft: 1000)
+        
+      visit "/people/#{doug.id}" 
+      save_and_open_page
+
+      expect(page).to have_content(doug.name)
+    end
+  end
 end
