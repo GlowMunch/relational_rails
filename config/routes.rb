@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get "/people/:id", to: "people#show"
   get "/hikes", to: "hikes#index"
   get "/hikes/:id", to: "hikes#show"
+  get "/people/:id/hikes", to: "people#hikes_index"
 end
