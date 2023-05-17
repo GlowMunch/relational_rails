@@ -1,0 +1,12 @@
+<h1><%= @person.name %></h2>
+
+<% @person.hikes.each do |hike| %>
+  <p>
+    <h2><%= hike.name %></h2>
+    <p>Scramble: <%= hike.scramble %></p>
+    <p>Level: <%= hike.level %></p>
+    <p>State: <%= hike.state %></p>
+    <p>Length: <%= hike.length %></p>
+    <p>Elevation Gain: <%= hike.elevation_gain_ft %>ft</p>
+  </p>
+<% end %>
